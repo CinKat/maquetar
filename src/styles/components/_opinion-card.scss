@@ -1,0 +1,23 @@
+.opinion-card {
+    &__section {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__img {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    &__name {
+        font-weight: bold;
+        color: $light-blue;
+    }
+
+    &__title {
+        font-weight: bold;
+        line-height: 26px;
+    }
+}

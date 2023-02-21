@@ -1,0 +1,26 @@
+.card {
+    &__section {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__content {
+        border-left: 1px solid gray;
+        padding: 12px;
+    }
+    
+    &__img {
+        width: 100%;
+        padding-bottom: 16px;
+    }
+
+    &__name-category {
+        font-weight: bold;
+        color: $green;
+    }
+
+    &__title {
+        font-weight: bold;
+        line-height: 26px;
+    }
+}

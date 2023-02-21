@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Card } from './components/card/card';
+import { OpinionCard } from './components/opinion-card/opinion-card';
+
+const classes = {
+  title: 'main__title',
+  content: 'main__content',
+  opinion: 'main__title main__title--opinion',
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className={classes.content}>
+      <section>
+        <h1 className={classes.title}>Más Deporte</h1>
+        <Card/>
+      </section>
+      <section>
+        <h1 className={classes.opinion}>Opinión</h1>
+        <OpinionCard/>
+      </section>
+    </main>
   );
 }
 
