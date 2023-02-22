@@ -1,14 +1,20 @@
 .opinion-card {
-    &__section {
-        display: flex;
-        gap: 32px;
+    &__article {
+        border-left: 1px solid $bg-gray;
+        padding: 8px;
+    }
+
+    &__bg {
+        padding: 16px;
+        background-color: $bg-gray;
     }
 
     &__img {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         border-radius: 100%;
         object-fit: cover;
+        padding-bottom: 16px;
     }
 
     &__name {

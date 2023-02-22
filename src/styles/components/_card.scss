@@ -1,17 +1,18 @@
 .card {
-    &__section {
-        display: flex;
-        gap: 16px;
-    }
+    &__article {
+        padding: 8px;
+        border-left: 1px solid $bg-gray;
 
-    &__content {
-        border-left: 1px solid gray;
-        padding: 12px;
+        &--bg {
+            background-color: $bg-gray;
+        }
     }
     
     &__img {
         width: 100%;
+        height: 160px;
         padding-bottom: 16px;
+        object-fit: cover;
     }
 
     &__name-category {

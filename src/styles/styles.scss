@@ -61,25 +61,12 @@ h1,h2,h3,h4,h5,h6 {
 
 .main {
     &__content {
-        margin: 16px;
+        max-width: 1200px;
+        margin: 16px auto;
+        // margin: 16px;
         display: flex;
         flex-direction: column;
         gap: 32px;
-    }
-
-    &__title {
-        background-color: #61876E;
-        color: white;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding: 8px;
-        margin-bottom: 16px;
-        &--opinion {
-            background-color: transparent;
-            color: #95BDFF;
-            border-top: 1px solid #95BDFF;
-            border-bottom:  1px solid #95BDFF;
-        }
     }
 }
 

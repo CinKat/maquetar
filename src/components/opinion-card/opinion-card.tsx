@@ -1,30 +1,28 @@
 import React from 'react';
+import { Article } from '../../interface/interface';
 
-const classes = {
-    img: 'opinion-card__img',
-    name: 'opinion-card__name',
-    title: 'opinion-card__title',
-    section: 'opinion-card__section'
+interface Props {
+    article: Article,
+    bg?: boolean,
+
 }
 
-export const OpinionCard = () => {
+const classes = {
+    content:    'opinion-card__article',
+    img:        'opinion-card__img',
+    name:       'opinion-card__name',
+    title:      'opinion-card__title',
+    articleBg:  'opinion-card__bg'
+}
+
+export const OpinionCard: React.FC<Props> = ({article} , props) => {
     return (
-        <section className={classes.section}>
-            <div>
-                <img className={classes.img} src='https://media.istockphoto.com/id/1388253782/es/foto/positivo-exitoso-hombre-de-negocios-profesional-de-negocios-del-milenio-retrato-de-la-cabeza.jpg?s=612x612&w=is&k=20&c=SFF1S8DtzxTf3a-EzfmQkNx6UVPZmEiOscShyN9S3cw='/>
-                <h3 className={classes.name}>Joan Josep Pallás</h3>
-                <h1 className={classes.title}>El Barca y una mancha inexplicable</h1>
-            </div>
-            <div>
-                <img className={classes.img} src='https://media.istockphoto.com/id/1388253782/es/foto/positivo-exitoso-hombre-de-negocios-profesional-de-negocios-del-milenio-retrato-de-la-cabeza.jpg?s=612x612&w=is&k=20&c=SFF1S8DtzxTf3a-EzfmQkNx6UVPZmEiOscShyN9S3cw='/>
-                <h3 className={classes.name}>Joan Josep Pallás</h3>
-                <h1 className={classes.title}>El Barca y una mancha inexplicable</h1>
-            </div>
-            <div>
-                <img className={classes.img} src='https://media.istockphoto.com/id/1388253782/es/foto/positivo-exitoso-hombre-de-negocios-profesional-de-negocios-del-milenio-retrato-de-la-cabeza.jpg?s=612x612&w=is&k=20&c=SFF1S8DtzxTf3a-EzfmQkNx6UVPZmEiOscShyN9S3cw='/>
-                <h3 className={classes.name}>Joan Josep Pallás</h3>
-                <h1 className={classes.title}>El Barca y una mancha inexplicable</h1>
-            </div>
-        </section>
+        <div className={classes.content}>
+            <article className={classes.articleBg}>
+                <img className={classes.img} src={article.url}/>
+                <h1 className={classes.name}>{article.name}</h1>
+                <h2 className={classes.title}>{article.title}</h2>
+            </article>
+        </div>
     )
 }

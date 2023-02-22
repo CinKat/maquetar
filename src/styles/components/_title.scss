@@ -1,0 +1,16 @@
+.title {
+    &__principal {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 8px;
+        margin-bottom: 16px;
+        background-color: #61876E;
+        &--opinion {
+            background-color: transparent;
+            color: #95BDFF;
+            border-top: 1px solid #95BDFF;
+            border-bottom:  1px solid #95BDFF;
+        }
+    }    
+}
