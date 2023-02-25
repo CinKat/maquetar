@@ -40,9 +40,9 @@ const dataOpinion = [
 ]
 
 const classes = {
-  title: 'main__title',
-  content: 'main__content',
-  opinion: 'main__title main__title--opinion',
+  title:    'main__title',
+  content:  'main__content',
+  opinion:  'main__title main__title--opinion',
 }
 
 function App() {

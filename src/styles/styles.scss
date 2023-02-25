@@ -61,9 +61,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .main {
     &__content {
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 16px auto;
-        // margin: 16px;
         display: flex;
         flex-direction: column;
         gap: 32px;

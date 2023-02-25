@@ -1,5 +1,6 @@
 import React from 'react';
 import { Article } from '../../interface/interface';
+import { ImageGallery } from '../imageGallery/imageGallery';
 
 interface Props {
     article: Article,
@@ -18,7 +19,7 @@ const classes = {
 export const Card: React.FC<Props> = ({article} , props) => {
     return (
         <article className={props.bg ? classes.articleBg : classes.article}>
-            <img className={classes.img} src={article.url}/>
+            <ImageGallery url={article.url} variant='rectangular'/>
             <h1 className={classes.category}>{article.name}</h1>
             <h2 className={classes.title}>{article.title}</h2>
         </article>
